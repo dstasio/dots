@@ -1,0 +1,24 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=2500
+setopt appendhistory extendedglob
+unsetopt autocd
+bindkey -v
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/davide/.zshrc'
+
+autoload -Uz compinit
+compinit
+
+export STOW_DIR=/home/davide/dotfiles
+
+## pacman aliases
+alias pac='sudo pacman -S'  	# install
+alias pacu='sudo pacman -Syu'	# update
+alias pacr='sudo pacman -Rs'	# remove
+alias pacrr='sudo pacman -Rnsc'	# remove v2
+alias pacs='sudo pacman -Ss'	# search
+
+# End of lines added by compinstall
