@@ -14,6 +14,8 @@ fi
 
 
 export STOW_DIR=/home/davide/dotfiles
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 ## pacman aliases
 alias pac='sudo pacman -S'  	# install
