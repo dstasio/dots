@@ -13,7 +13,7 @@ fi
 ## end of zprezto config
 
 
-export STOW_DIR=/home/davide/dotfiles
+export STOW_DIR=/$HOME/dot-configs
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
