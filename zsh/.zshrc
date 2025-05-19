@@ -13,7 +13,7 @@ fi
 ## end of zprezto config
 
 
-export STOW_DIR=/$HOME/dot-configs
+export STOW_DIR=$HOME/workspace/arch_dots
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
