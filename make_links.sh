@@ -15,3 +15,8 @@ script_dir=$(realpath $(dirname "$0"))
 sudo stow -v -t ~ -d "$script_dir" -R "git"
 sudo stow -v -t ~ -d "$script_dir" -R "vim"
 sudo stow -v -t ~ -d "$script_dir" -R "bash"
+sudo stow -v -t ~/.config -d "$script_dir" -R "fish"
+
+keyd_config_dir=/etc/keyd
+sudo mkdir -p $keyd_config_dir
+sudo stow -v -t /etc/keyd -d "$script_dir" -R "keyd"
