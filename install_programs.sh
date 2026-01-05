@@ -26,3 +26,9 @@ sudo systemctl enable keyd --now
 
 #
 # sudo dnf install @virtualization
+### sudo vim /etc/libvirt/libvirtd.conf <- enable `unix_sock_group = "libivrt"` & `unix_sock_rw_perms = "0770"`
+### sudo systemctl start libvirtd
+### sudo systemctl enable libvirtd
+### sudo usermod -a -G libvirt $(whoami)
+###
+
