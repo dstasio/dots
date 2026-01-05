@@ -15,6 +15,14 @@ append_program lazygit
 sudo dnf copr enable alternateved/keyd
 append_program keyd
 
+sudo dnf copr enable emixampp/synology-drive
+# GNOME:
+# sudo dnf --refresh install synology-drive
+sudo dnf --refresh install synology-drive-noextra
+
 sudo dnf install $program_list
 
 sudo systemctl enable keyd --now
+
+#
+# sudo dnf install @virtualization
